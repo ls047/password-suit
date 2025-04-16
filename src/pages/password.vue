@@ -1,8 +1,8 @@
 <template>
-  <div class="min-h-screen theme-page-gradient p-8 relative overflow-hidden animate-gradient">
+  <div class="min-h-screen theme-page-gradient p-4 sm:p-8 relative overflow-hidden animate-gradient">
     <Toast v-if="showToast" message="Password copied to clipboard" />
     <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMSIgZmlsbD0id2hpdGUiIGZpbGwtb3BhY2l0eT0iMC4xIi8+PC9zdmc+')] opacity-20"></div>
-    <div class="max-w-3xl mx-auto space-y-8 relative">
+    <div class="max-w-lg mx-auto space-y-6 relative">
       <div class="backdrop-blur-xl bg-white/10 p-6 rounded-2xl shadow-2xl border border-white/20">
         <h2 class="text-2xl font-bold text-white mb-6">Password Generator</h2>
         
@@ -15,13 +15,13 @@
                 v-model="passwordLength"
                 min="8"
                 max="32"
-                class="w-48 h-2 theme-gradient rounded-lg appearance-none cursor-pointer [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-4 [&::-webkit-slider-thumb]:h-4 [&::-webkit-slider-thumb]:bg-white [&::-webkit-slider-thumb]:border-2 [&::-webkit-slider-thumb]:border-white/20 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:shadow-md [&::-webkit-slider-thumb]:transition-all [&::-webkit-slider-thumb]:duration-150 hover:[&::-webkit-slider-thumb]:scale-110"
+                class="w-32 sm:w-48 h-2 theme-gradient rounded-lg appearance-none cursor-pointer touch-manipulation [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-6 [&::-webkit-slider-thumb]:h-6 [&::-webkit-slider-thumb]:bg-white [&::-webkit-slider-thumb]:border-2 [&::-webkit-slider-thumb]:border-white/20 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:shadow-md [&::-webkit-slider-thumb]:transition-all [&::-webkit-slider-thumb]:duration-150 hover:[&::-webkit-slider-thumb]:scale-110"
               />
               <span class="w-12 text-center font-semibold text-white">{{ passwordLength }}</span>
             </div>
           </div>
 
-          <div class="grid grid-cols-2 gap-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <label class="flex items-center space-x-2">
               <input type="checkbox" v-model="includeUppercase" class="form-checkbox" />
               <span class="text-white">Uppercase Letters</span>
