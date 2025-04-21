@@ -2,7 +2,7 @@
   <div class="flex min-h-screen theme-gradient w-full h-full">
     <Sidebar @toggle="handleSidebarToggle" />
     <main class="flex-1 transition-all duration-300 h-full" :class="{ 'ml-64': isSidebarOpen, 'ml-0': !isSidebarOpen }">
-      <router-view></router-view>
+      <router-view class="pt-20"></router-view>
     </main>
   </div>
 </template>

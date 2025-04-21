@@ -65,6 +65,10 @@
   background-color: var(--active-bg);
 }
 
+.theme-active-link {
+  background-color: var(--active-bg);
+}
+
 .theme-page-gradient {
   background-image: linear-gradient(to bottom right, var(--page-gradient-from), var(--page-gradient-via), var(--page-gradient-to));
 }

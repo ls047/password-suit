@@ -1,7 +1,7 @@
 <template>
-  <div class="min-h-screen theme-gradient p-8 relative overflow-hidden animate-gradient">
+  <div class="min-h-screen theme-gradient p-4 sm:p-8 relative overflow-hidden animate-gradient">
     <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMSIgZmlsbD0id2hpdGUiIGZpbGwtb3BhY2l0eT0iMC4xIi8+PC9zdmc+')] opacity-20"></div>
-    <div class="max-w-3xl mx-auto space-y-8 relative">
+    <div class="max-w-lg mx-auto space-y-8 relative">
       <div class="backdrop-blur-xl bg-white/10 p-6 rounded-2xl shadow-2xl border border-white/20">
         <h2 class="text-2xl font-bold text-white mb-6">URL Validator</h2>
         
