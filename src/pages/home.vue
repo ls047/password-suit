@@ -31,12 +31,36 @@
           <h2 class="text-2xl font-semibold text-center mb-4 text-white">MD5 Hashing</h2>
           <p class="text-white/80">Convert your passwords into MD5 hash format for secure storage and verification.</p>
         </div>
+
+        <div class="group backdrop-blur-xl bg-white/10 p-8 rounded-2xl shadow-2xl border border-white/20 transform hover:scale-105 hover:bg-white/20 transition-all duration-300 cursor-pointer">
+          <div class="text-center mb-6 transform group-hover:scale-110 transition-transform duration-300">
+            <i class="fas fa-fingerprint text-4xl text-blue-300 group-hover:text-blue-400 transition-colors duration-300"></i>
+          </div>
+          <h2 class="text-2xl font-semibold text-center mb-4 text-white">SHA1 Hashing</h2>
+          <p class="text-white/80">Generate SHA1 hash for your text, commonly used for data integrity verification.</p>
+        </div>
+
+        <div class="group backdrop-blur-xl bg-white/10 p-8 rounded-2xl shadow-2xl border border-white/20 transform hover:scale-105 hover:bg-white/20 transition-all duration-300 cursor-pointer">
+          <div class="text-center mb-6 transform group-hover:scale-110 transition-transform duration-300">
+            <i class="fas fa-qrcode text-4xl text-green-300 group-hover:text-green-400 transition-colors duration-300"></i>
+          </div>
+          <h2 class="text-2xl font-semibold text-center mb-4 text-white">QR Code Generation</h2>
+          <p class="text-white/80">Create QR codes for URLs, text, or other data quickly and easily.</p>
+        </div>
+
+        <div class="group backdrop-blur-xl bg-white/10 p-8 rounded-2xl shadow-2xl border border-white/20 transform hover:scale-105 hover:bg-white/20 transition-all duration-300 cursor-pointer">
+          <div class="text-center mb-6 transform group-hover:scale-110 transition-transform duration-300">
+            <i class="fas fa-link text-4xl text-orange-300 group-hover:text-orange-400 transition-colors duration-300"></i>
+          </div>
+          <h2 class="text-2xl font-semibold text-center mb-4 text-white">URL Checker</h2>
+          <p class="text-white/80">Verify the status and safety of URLs before visiting them.</p>
+        </div>
       </div>
 
       <div class="backdrop-blur-xl bg-white/10 p-10 rounded-2xl shadow-2xl border border-white/20">
         <h2 class="text-3xl font-bold text-center mb-8 text-white">Why Choose Our Tools?</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div class="group flex items-start space-x-6 p-4 rounded-xl hover:bg-white/10 transition-colors duration-300">
+          <div class="group flex items-start space-x-6 rounded-xl hover:bg-white/10 transition-colors duration-300">
             <i class="fas fa-bolt text-yellow-300 text-3xl mt-1 group-hover:scale-110 transition-transform duration-300"></i>
             <div>
               <h3 class="text-xl font-semibold mb-3 text-white">Fast & Efficient</h3>
@@ -51,6 +75,7 @@
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </div>

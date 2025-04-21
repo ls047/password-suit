@@ -13,7 +13,7 @@
     <div class="p-4">
       <button
         @click="toggleSidebar"
-        class="absolute -right-18 top-4 p-2 rounded-r-lg text-white hover:bg-red-800 transition-colors duration-200"
+        class="absolute -right-18 top-4 p-2 rounded-r-lg text-white theme-hover transition-colors duration-200"
       >
         <Icon :icon="isOpen ? 'mdi:close' : 'uit:align-right'" width="44" height="44" />
       </button>
