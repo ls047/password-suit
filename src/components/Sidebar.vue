@@ -27,6 +27,7 @@
           to="/"
           class="flex items-center space-x-3 p-3 rounded-lg transition-colors duration-200 hover:bg-black"
           active-class="bg-black"
+          @click="toggleSidebar"
         >
           <i class="fas fa-home text-xl"></i>
           <span>Home</span>
@@ -36,6 +37,7 @@
           to="/password"
           class="flex items-center space-x-3 p-3 rounded-lg transition-colors duration-200 hover:bg-black"
           active-class="bg-black"
+          @click="toggleSidebar"
         >
           <i class="fas fa-key text-xl"></i>
           <span>Password Generator</span>
@@ -43,8 +45,9 @@
 
         <router-link
           to="/hash"
-         class="flex items-center space-x-3 p-3 rounded-lg transition-colors duration-200 hover:bg-black"
+          class="flex items-center space-x-3 p-3 rounded-lg transition-colors duration-200 hover:bg-black"
           active-class="bg-black"
+          @click="toggleSidebar"
         >
           <i class="fas fa-fingerprint text-xl"></i>
           <span>MD5 Hash</span>
@@ -52,8 +55,9 @@
 
         <router-link
           to="/sha1"
-         class="flex items-center space-x-3 p-3 rounded-lg transition-colors duration-200 hover:bg-black"
+          class="flex items-center space-x-3 p-3 rounded-lg transition-colors duration-200 hover:bg-black"
           active-class="bg-black"
+          @click="toggleSidebar"
         >
           <i class="fas fa-shield-alt text-xl"></i>
           <span>SHA1 Hash</span>
@@ -61,8 +65,9 @@
 
         <router-link
           to="/url-check"
-         class="flex items-center space-x-3 p-3 rounded-lg transition-colors duration-200 hover:bg-black"
+          class="flex items-center space-x-3 p-3 rounded-lg transition-colors duration-200 hover:bg-black"
           active-class="bg-black"
+          @click="toggleSidebar"
         >
           <i class="fas fa-link text-xl"></i>
           <span>URL Check</span>
@@ -70,8 +75,9 @@
 
         <router-link
           to="/qr-code"
-         class="flex items-center space-x-3 p-3 rounded-lg transition-colors duration-200 hover:bg-black"
+          class="flex items-center space-x-3 p-3 rounded-lg transition-colors duration-200 hover:bg-black"
           active-class="bg-black"
+          @click="toggleSidebar"
         >
           <i class="fas fa-qrcode text-xl"></i>
           <span>QR Code</span>
