@@ -4,22 +4,17 @@
     <div class="max-w-lg mx-auto space-y-8 relative">
       <div class="backdrop-blur-xl bg-white/10 p-6 rounded-2xl shadow-2xl border border-white/20">
         <h2 class="text-2xl font-bold text-white mb-6">SHA1 Hash Generator</h2>
-        
+
         <div class="space-y-4">
           <div class="relative">
             <input
-              :type="showPassword ? 'text' : 'password'"
-              v-model="password"
-              placeholder="Enter your text"
-              class="w-full p-3 border rounded-lg pr-24 font-mono text-white bg-white/5 focus:ring-2 focus:ring-red-700 focus:border-red-700 hover:border-red-600 transition-colors"
+              type="text"
+              v-model="inputText"
+              placeholder="Enter text to hash"
+              class="w-full p-3 border rounded-lg font-mono text-white bg-white/5 focus:ring-2 focus:ring-blue-400 focus:border-blue-400 hover:border-blue-600 transition-colors"
               @input="generateHash"
             />
-            <button
-              @click="showPassword = !showPassword"
-              class="absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-600 hover:text-gray-800 transition-colors"
-            >
-              <i :class="showPassword ? 'fas fa-eye-slash' : 'fas fa-eye'"></i>
-            </button>
+            <!-- Removed the eye toggle button -->
           </div>
 
           <div class="mt-8 space-y-4">
@@ -29,7 +24,7 @@
               <button
                 v-if="hash"
                 @click="copyHash"
-                class="absolute right-2 top-1/2 transform -translate-y-1/2 text-red-600 hover:text-red-800 transition-colors"
+                class="absolute right-2 top-1/2 transform -translate-y-1/2 text-blue-600 hover:text-blue-800 transition-colors"
               >
                 <i class="fas fa-copy"></i>
               </button>
@@ -63,13 +58,13 @@
 import { ref, onMounted } from 'vue';
 import CryptoJS from 'crypto-js';
 
-const password = ref('');
+const inputText = ref(''); // Renamed from password
 const hash = ref('');
-const showPassword = ref(false);
+// Removed showPassword ref
 
 const generateHash = () => {
-  if (password.value) {
-    hash.value = CryptoJS.SHA1(password.value).toString();
+  if (inputText.value) { // Use inputText
+    hash.value = CryptoJS.SHA1(inputText.value).toString(); // Use inputText
   } else {
     hash.value = '';
   }
@@ -87,3 +82,7 @@ onMounted(() => {
   generateHash();
 });
 </script>
+
+<style>
+/* ... existing styles ... */
+</style>
